@@ -1,0 +1,169 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant declared_type='NSString*' type='@' name='MFSideMenuStateNotificationEvent' const='true'/>
+<enum name='MFSideMenuPanModeCenterViewController' value='1'/>
+<enum name='MFSideMenuPanModeDefault' value='3'/>
+<enum name='MFSideMenuPanModeNone' value='0'/>
+<enum name='MFSideMenuPanModeSideMenu' value='2'/>
+<enum name='MFSideMenuStateClosed' value='0'/>
+<enum name='MFSideMenuStateEventMenuDidClose' value='3'/>
+<enum name='MFSideMenuStateEventMenuDidOpen' value='1'/>
+<enum name='MFSideMenuStateEventMenuWillClose' value='2'/>
+<enum name='MFSideMenuStateEventMenuWillOpen' value='0'/>
+<enum name='MFSideMenuStateLeftMenuOpen' value='1'/>
+<enum name='MFSideMenuStateRightMenuOpen' value='2'/>
+<class name='MFSideMenuContainerViewController'>
+<method selector='centerViewController'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='containerWithCenterViewController:leftMenuViewController:rightMenuViewController:'>
+<arg declared_type='id' type='@' name='centerViewController' index='0'/>
+<arg declared_type='id' type='@' name='leftMenuViewController' index='1'/>
+<arg declared_type='id' type='@' name='rightMenuViewController' index='2'/>
+<retval declared_type='MFSideMenuContainerViewController*' type='@'/>
+</method>
+<method selector='leftMenuViewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='leftMenuWidth'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='menuAnimationDefaultDuration'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='menuAnimationMaxDuration'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='menuSlideAnimationEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='menuSlideAnimationFactor'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='menuState'>
+<retval declared_type='MFSideMenuState' type='i'/>
+</method>
+<method selector='menuWidth'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='panMode'>
+<retval declared_type='MFSideMenuPanMode' type='i'/>
+</method>
+<method selector='rightMenuViewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='rightMenuWidth'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='setCenterViewController:'>
+<arg declared_type='id' type='@' name='centerViewController' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftMenuViewController:'>
+<arg declared_type='UIViewController*' type='@' name='leftMenuViewController' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftMenuWidth:'>
+<arg declared_type='CGFloat' type='f' name='leftMenuWidth' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftMenuWidth:animated:'>
+<arg declared_type='CGFloat' type='f' name='leftMenuWidth' index='0'/>
+<arg declared_type='BOOL' type='B' name='animated' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuAnimationDefaultDuration:'>
+<arg declared_type='CGFloat' type='f' name='menuAnimationDefaultDuration' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuAnimationMaxDuration:'>
+<arg declared_type='CGFloat' type='f' name='menuAnimationMaxDuration' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuSlideAnimationEnabled:'>
+<arg declared_type='BOOL' type='B' name='menuSlideAnimationEnabled' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuSlideAnimationFactor:'>
+<arg declared_type='CGFloat' type='f' name='menuSlideAnimationFactor' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuState:'>
+<arg declared_type='MFSideMenuState' type='i' name='menuState' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuState:completion:'>
+<arg declared_type='MFSideMenuState' type='i' name='menuState' index='0'/>
+<arg declared_type='void (^)(void)' type='@?' name='completion' index='1' function_pointer='true'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuWidth:'>
+<arg declared_type='CGFloat' type='f' name='menuWidth' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMenuWidth:animated:'>
+<arg declared_type='CGFloat' type='f' name='menuWidth' index='0'/>
+<arg declared_type='BOOL' type='B' name='animated' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPanMode:'>
+<arg declared_type='MFSideMenuPanMode' type='i' name='panMode' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightMenuViewController:'>
+<arg declared_type='UIViewController*' type='@' name='rightMenuViewController' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightMenuWidth:'>
+<arg declared_type='CGFloat' type='f' name='rightMenuWidth' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightMenuWidth:animated:'>
+<arg declared_type='CGFloat' type='f' name='rightMenuWidth' index='0'/>
+<arg declared_type='BOOL' type='B' name='animated' index='1'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShadowColor:'>
+<arg declared_type='UIColor*' type='@' name='shadowColor' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShadowEnabled:'>
+<arg declared_type='BOOL' type='B' name='shadowEnabled' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShadowOpacity:'>
+<arg declared_type='CGFloat' type='f' name='shadowOpacity' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShadowRadius:'>
+<arg declared_type='CGFloat' type='f' name='shadowRadius' index='0'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shadowColor'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+<method selector='shadowEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shadowOpacity'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='shadowRadius'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='toggleLeftSideMenuCompletion:'>
+<arg declared_type='void (^)(void)' type='@?' name='completion' index='0' function_pointer='true'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='toggleRightSideMenuCompletion:'>
+<arg declared_type='void (^)(void)' type='@?' name='completion' index='0' function_pointer='true'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+</signatures>
